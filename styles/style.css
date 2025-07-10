@@ -53,7 +53,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F7F8FC;
     padding: 100px 150px;
     gap: 60px;
 }
@@ -101,3 +100,49 @@ nav {
     width: 650px;
     border-radius: 30px;
 }
+
+/* another section */
+.stats-section {
+    width: 100%;
+    background-color: #F7F8FC;
+    padding: 5%;
+  }
+  
+  .stats-container {
+    width: 80%;
+    margin: 5%;
+    background-color: #d6d4ef;
+    text-align: center;
+    padding: 1%;
+    border-radius: 30px;
+  }
+  
+  .stats-title {
+    font-size: 56px;
+    font-weight: 700;
+    color: #2E2F32;
+    margin-bottom: 40px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .stats-numbers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .stat h1 {
+    font-size: 90px;
+    font-weight: 800;
+    color: #4E47FF;
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .stat p {
+    font-size: 40px;
+    color: #7C7C7C;
+    font-family: 'Inter', sans-serif;
+  }
+  
