@@ -14,7 +14,6 @@ body {
     border: none;
     padding: 18px 35px;
     border-radius: 5px;
-    margin-right: 100px;
 }
 
 /* Navigation Bar */
@@ -114,9 +113,10 @@ nav {
 }
 
 .split-right img {
-    max-width: 100%;
+    width: 650px;
     /* FIXED: prevents overflow */
     border-radius: 20px;
+    margin-left: 600px;
 }
 
 /* another section */
@@ -243,3 +243,105 @@ nav {
     color: #000000;
     margin: 0;
 }
+
+.centered-section {
+    width: 100%;
+    background-color: #F7F8FC;
+    padding: 100px 0;
+}
+
+.centered-container {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2%;
+    border-radius: 30px;
+}
+
+.centered-title {
+    font-size: 56px;
+    font-weight: 700;
+    color: #2E2F32;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 20px;
+}
+
+.centered-subtext {
+    font-size: 20px;
+    color: #7C7C7C;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 30px;
+}
+
+.centered-image img {
+    width: 680px;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #F7F8FC;
+    padding: 100px 0;
+  }
+  
+  .contact-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+  }
+  
+  /* Left Text */
+  .contact-left {
+    flex: 1;
+  }
+  
+  .contact-left h1 {
+    font-size: 110px;
+    font-weight: 600;
+    color: #2E2F32;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+  }
+  
+  /* Right Form */
+  .contact-right {
+    flex: 1;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  
+  .contact-form .btn-primary {
+    align-self: flex-start;
+    background-color: #4E47FF;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
