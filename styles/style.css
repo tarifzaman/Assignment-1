@@ -1,3 +1,10 @@
+/* Reset overflow to prevent unwanted scroll */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 /* Primary Button */
 .btn-primary {
     background-color: #4E47FF;
@@ -48,57 +55,68 @@ nav {
 }
 
 /* Section Container in Main */
-.div-container {
+
+/* Split Section */
+.split-section {
     background-color: #F7F8FC;
+    padding: 100px 150px;
+    /* FIXED: changed from 10% to fixed px */
+}
+
+/* Flex Container */
+.split-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 150px;
-    gap: 60px;
+    max-width: 1700px;
+    margin: 0 auto;
+    gap: 100px;
+    /* FIXED: reduced from 380px */
 }
 
-.div-left-1 {
+/* Left Column */
+.split-left {
     flex: 1;
 }
 
-.div-left-1 h1 {
-    font-size: 90px;
-    font-weight: 600;
+.split-left h1 {
+    font-size: 48px;
+    font-weight: 700;
     color: #2E2F32;
     margin-bottom: 20px;
     font-family: 'Inter', sans-serif;
 }
 
-.div-left-1 h4 {
-    font-size: 40px;
+.split-left p {
+    font-size: 18px;
     color: #7C7C7C;
-    font-weight: 400;
-    margin: 0px;
-    line-height: 1.5;
-}
-
-.btn-primary {
-    background-color: #4E47FF;
-    color: white;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 14px 28px;
-    border: none;
-    border-radius: 8px;
-    margin-top: 30px;
-    cursor: pointer;
+    margin: 8px 0;
     font-family: 'Inter', sans-serif;
 }
 
-.div-right-2 {
+/* Unique button style so it doesn't affect other buttons */
+.split-btn {
+    background-color: #4E47FF;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: none;
+    padding: 18px 35px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+/* Right Column */
+.split-right {
     flex: 1;
     display: flex;
     justify-content: center;
 }
 
-.div-right-2 img {
-    width: 650px;
-    border-radius: 30px;
+.split-right img {
+    max-width: 100%;
+    /* FIXED: prevents overflow */
+    border-radius: 20px;
 }
 
 /* another section */
@@ -106,123 +124,122 @@ nav {
     width: 100%;
     background-color: #F7F8FC;
     padding: 1%;
-  }
-  
-  .stats-container {
-    width: 80%;
-    margin: 5%;
+}
+
+.stats-container {
     background-color: #d6d4ef;
+    width: 80%;
+    margin: auto;
     text-align: center;
-    padding: 1%;
     border-radius: 30px;
-  }
-  
-  .stats-title {
+    padding: 1%;
+}
+
+.stats-title {
     font-size: 56px;
     font-weight: 700;
     color: #2E2F32;
     margin-bottom: 40px;
     font-family: 'Inter', sans-serif;
-  }
-  
-  .stats-numbers {
+}
+
+.stats-numbers {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 20px;
-  }
-  
-  .stat h1 {
+}
+
+.stat h1 {
     font-size: 90px;
     font-weight: 800;
     color: #4E47FF;
     margin-bottom: 10px;
     font-family: 'Inter', sans-serif;
-  }
-  
-  .stat p {
+}
+
+.stat p {
     font-size: 40px;
     color: #7C7C7C;
     font-family: 'Inter', sans-serif;
-  }
-  
-  /* review segment */ 
-  .review-section {
+}
+
+/* review segment */
+.review-section {
     background-color: #F7F8FC;
     padding: 5%;
-  }
-  
-  .review-container {
+}
+
+.review-container {
     width: 80%;
     margin: auto;
     text-align: center;
-  }
-  
-  .review-title {
+}
+
+.review-title {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 60px;
     color: #2E2F32;
     font-family: 'Inter', sans-serif;
-  }
-  
-  .review-boxes {
+}
+
+.review-boxes {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-  }
-  
-  .review-box {
+}
+
+.review-box {
     background-color: white;
     padding: 30px;
     border-radius: 20px;
     flex: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     text-align: left;
-  }
-  
-  .stars img {
+}
+
+.stars img {
     width: 20px;
     margin-right: 4px;
-  }
-  
-  .review-box h4 {
+}
+
+.review-box h4 {
     font-size: 22px;
     color: #4E47FF;
     font-weight: 700;
     margin: 15px 0 10px;
-  }
-  
-  .review-box h6 {
+}
+
+.review-box h6 {
     font-size: 16px;
     color: #7C7C7C;
     margin: 4px 0;
     font-weight: 400;
-  }
-  
-  .user-info {
+}
+
+.user-info {
     display: flex;
     align-items: center;
     margin-top: 20px;
-  }
-  
-  .user-info img {
+}
+
+.user-info img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-right: 15px;
-  }
-  
-  .user-text .user-name {
+}
+
+.user-text .user-name {
     font-size: 16px;
     font-weight: 600;
     color: #2E2F32;
     margin: 0;
-  }
-  
-  .user-text .date {
+}
+
+.user-text .date {
     font-size: 14px;
     color: #000000;
     margin: 0;
-  }
-  
+}
