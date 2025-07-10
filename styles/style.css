@@ -105,7 +105,7 @@ nav {
 .stats-section {
     width: 100%;
     background-color: #F7F8FC;
-    padding: 5%;
+    padding: 1%;
   }
   
   .stats-container {
@@ -144,5 +144,85 @@ nav {
     font-size: 40px;
     color: #7C7C7C;
     font-family: 'Inter', sans-serif;
+  }
+  
+  /* review segment */ 
+  .review-section {
+    background-color: #F7F8FC;
+    padding: 5%;
+  }
+  
+  .review-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .review-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #2E2F32;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .review-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .review-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    flex: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    text-align: left;
+  }
+  
+  .stars img {
+    width: 20px;
+    margin-right: 4px;
+  }
+  
+  .review-box h4 {
+    font-size: 22px;
+    color: #4E47FF;
+    font-weight: 700;
+    margin: 15px 0 10px;
+  }
+  
+  .review-box h6 {
+    font-size: 16px;
+    color: #7C7C7C;
+    margin: 4px 0;
+    font-weight: 400;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .user-text .user-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2E2F32;
+    margin: 0;
+  }
+  
+  .user-text .date {
+    font-size: 14px;
+    color: #000000;
+    margin: 0;
   }
   
