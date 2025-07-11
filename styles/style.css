@@ -79,7 +79,7 @@ nav {
 }
 
 .split-left h1 {
-    font-size: 48px;
+    font-size: 74px;
     font-weight: 700;
     color: #2E2F32;
     margin-bottom: 20px;
@@ -87,7 +87,7 @@ nav {
 }
 
 .split-left p {
-    font-size: 18px;
+    font-size: 24px;
     color: #7C7C7C;
     margin: 8px 0;
     font-family: 'Inter', sans-serif;
@@ -113,7 +113,7 @@ nav {
 }
 
 .split-right img {
-    width: 650px;
+    width: 550px;
     /* FIXED: prevents overflow */
     border-radius: 20px;
     margin-left: 600px;
