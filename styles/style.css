@@ -369,9 +369,9 @@ nav {
     resize: none;
 }
 
-.contact-form .btn-primary {
+.contact-form{
     align-self: flex-start;
-    background-color: #4E47FF;
+    background-color: #F7F8FC;
     font-weight: bold;
     font-size: 18px;
     color: white;
